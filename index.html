@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TESSERACT — разработка сайтов на заказ</title>
+<style>
+:root{--bg:#f6f7fb;--surface:#fff;--text:#14161f;--muted:#5b6275;--line:#e2e5ef;--accent:#5b5bf0;--accent-text:#fff;--glow:rgba(91,91,240,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0f17;--surface:#161926;--text:#eceefa;--muted:#9aa1b8;--line:#262a3d;--accent:#8b8bff;--accent-text:#0d0f17;--glow:rgba(139,139,255,.14)}}
+:root[data-theme="dark"]{--bg:#0d0f17;--surface:#161926;--text:#eceefa;--muted:#9aa1b8;--line:#262a3d;--accent:#8b8bff;--accent-text:#0d0f17;--glow:rgba(139,139,255,.14)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;position:relative;overflow-x:hidden;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:absolute;top:0;left:0;right:0;height:560px;background:radial-gradient(ellipse 60% 100% at 30% 0,var(--glow),transparent 70%);pointer-events:none;z-index:-1}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-weight:800;letter-spacing:.08em;text-decoration:none}
+nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--text)}
+.hero{padding:72px 0 56px}
+h1{font-size:clamp(32px,6vw,52px);font-weight:700;line-height:1.15;margin:0 0 20px;letter-spacing:-.02em;background:linear-gradient(120deg,var(--text) 45%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:540px;font-size:18px;line-height:1.7;margin:0 0 32px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;background:var(--accent);color:var(--accent-text);font-weight:600;text-decoration:none;margin:0 10px 10px 0}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.price{font-size:26px;font-weight:700;margin:8px 0 14px}
+.price small{font-size:14px;font-weight:500;color:var(--muted)}
+.card ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+.card.pop{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+.tag{font-size:12px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.work a.card{text-decoration:none;display:block}
+.work a.card:hover{border-color:var(--accent)}
+.note{color:var(--muted);font-size:14px;margin-top:18px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="#top">TESSERACT</a><nav><a href="#prices">Цены</a><a href="#works">Работы</a><a href="#contact">Контакты</a></nav></header>
+<div class="hero" id="top">
+<h1>Сайты, которые работают<br>на ваши задачи</h1>
+<p>Разрабатываю сайты под ключ: от простой визитки до интернет-магазина и веб-приложения. Аккуратный код, адаптивная вёрстка, понятные сроки.</p>
+<a class="btn" href="https://t.me/TESSERACT_Cody" target="_blank" rel="noopener">Обсудить проект в Telegram</a><a class="btn ghost" href="https://github.com/TESSERACT-cody/" target="_blank" rel="noopener">Мой GitHub</a>
+</div>
+
+<section id="prices">
+<h2>Расценки</h2>
+<p class="sub">Цены ориентировочные: точную стоимость называю после обсуждения задачи.</p>
+<div class="grid">
+<div class="card"><h3>Лендинг / визитка</h3><div class="price">от 8 000 ₽ <small>· 2–5 дней</small></div><ul><li>Одна страница или до 3 разделов</li><li>Адаптив под телефоны</li><li>Форма обратной связи</li><li>Базовое SEO</li></ul></div>
+<div class="card pop"><span class="tag">Популярное</span><h3>Многостраничный сайт</h3><div class="price">от 20 000 ₽ <small>· 1–3 недели</small></div><ul><li>До 10 страниц</li><li>Уникальный дизайн</li><li>Админка для контента</li></ul></div>
+<div class="card"><h3>Интернет-магазин</h3><div class="price">от 45 000 ₽ <small>· 3–6 недель</small></div><ul><li>Каталог, корзина, заказы</li><li>Онлайн-оплата</li><li>Личный кабинет</li><li>Интеграции (CRM, почта)</li></ul></div>
+<div class="card"><h3>Веб-приложения и боты</h3><div class="price">по договорённости</div><ul><li>Язык: Python</li><li>Любые Telegram-боты</li><li>Серверная часть и база данных</li><li>API и интеграции</li></ul></div>
+<div class="card"><h3>Доработка и поддержка</h3><div class="price">от 1 000 ₽/час</div><p>Правки, новые разделы, исправление багов, ускорение и перенос существующего сайта.</p></div>
+<div class="card"><h3>Дополнительно</h3><ul><li>Срочная работа: +30%</li><li>Доработка дизайна: от 3 000 ₽</li><li>Поддержка: от 2 000 ₽/мес</li></ul></div>
+</div>
+<p class="note">Оплата поэтапно: 50% предоплата, остаток после сдачи работы.</p>
+</section>
+
+<section id="works" class="work">
+<h2>Мои работы</h2>
+<p class="sub">Несколько проектов, которые я сделал.</p>
+<div class="grid">
+<a class="card" href="https://new.gymn470.ru/" target="_blank" rel="noopener"><h3>new.gymn470.ru</h3><p>Новый сайт гимназии. Сейчас на стадии установки.</p></a>
+<a class="card" href="https://nccheats.github.io/NEXUS_CORE/" target="_blank" rel="noopener"><h3>NEXUS CORE</h3><p>Проект на GitHub Pages: nccheats.github.io/NEXUS_CORE.</p></a>
+<a class="card" href="https://github.com/TESSERACT-cody/" target="_blank" rel="noopener"><h3>GitHub</h3><p>Остальной код и проекты смотрите в моём профиле TESSERACT-cody.</p></a>
+</div>
+</section>
+
+<section id="contact">
+<h2>Связаться</h2>
+<p class="sub">Расскажите, какой сайт или бот нужен, и я оценю сроки и стоимость.</p>
+<a class="btn" href="https://t.me/TESSERACT_Cody" target="_blank" rel="noopener">Telegram: @TESSERACT_Cody</a><a class="btn ghost" href="https://github.com/TESSERACT-cody/" target="_blank" rel="noopener">GitHub</a>
+</section>
+<footer>© 2026 TESSERACT · Разработка сайтов · <a href="https://t.me/TESSERACT_Cody" target="_blank" rel="noopener">@TESSERACT_Cody</a></footer>
+</div>
+</body>
+</html>
